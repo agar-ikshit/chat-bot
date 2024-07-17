@@ -1,0 +1,109 @@
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    
+    padding: 8px;
+    background-color: #171717;
+    border-radius: 25px;
+    width: 210px;
+    
+    margin:auto;
+    margin-top: 6px;
+    margin-bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.search-button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0; 
+    margin-left: -40px; /* Add margin-left for spacing */
+}
+
+.searchIcon {
+    height: 20px; /* Ensure this is the desired height */
+    width: 20px;  /* Ensure this is the desired width */
+    cursor: pointer;
+    padding: 0; /* Remove padding to avoid overflow */
+}
+
+
+input {
+    flex: 1;
+    background-color: #171717;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    /* background-color: #2c2c2c; */
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-bar-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-result {
+    position: absolute;
+    background-color: #242424;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    border-radius: 10px;
+    padding: 10px;
+    width: 210px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.search-suggestion-line {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-suggestion-line:hover {
+    background-color: #2c2c2c;
+}
+
+.search-suggestion-line:last-child {
+    border-bottom: none;
+}
+
+.search-result::-webkit-scrollbar {
+    width: 4px;
+}
+
+.search-result::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.search-result::-webkit-scrollbar-thumb {
+    background-color: rgba(136, 136, 136, 0.5);
+    border-radius: 10px;
+}
+
+.search-result::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.7);
+}

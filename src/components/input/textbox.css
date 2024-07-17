@@ -1,0 +1,49 @@
+.textbox-container {
+  position: relative;
+  bottom: 20px;
+  width: 87%;
+
+  
+  height: 45px;
+  background-color: #585757;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+
+}
+
+.sendimg {
+  width: 30px;
+  height: 30px;
+}
+
+.textbox-input {
+  background-color: #585757;
+  width: calc(100% - 60px);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.textbox-container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textbox-container button {
+  background-color: #585757;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox-container button:hover {
+  background-color: #242424;
+}
